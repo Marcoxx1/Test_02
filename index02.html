@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <style>
+</head>
+<style>
     table,
     th,
     td {
-      border: 2px solid black;
-      border-collapse: collapse;
+        border: 2px solid black;
+        border-collapse: collapse;
     }
-  </style>
 
-  <body>
+    #myDiv {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .mySecondDiv {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+<body>
     <table>
-      <caption style="color: blue; font-size: 25px">
-        Mi tabla de ejemplo
-      </caption>
-      <tr>
-        <th>Cabecera 1</th>
-        <th>Cabecera 2</th>
-        <th>Cabecera 3</th>
-      </tr>
-      <tr>
-        <td>Fila 1 Columna 1</td>
-        <td>Fila 1 Columna 2</td>
-        <td>Fila 1 Columna 3</td>
-      </tr>
-      <tr>
-        <td>Fila 2 Columna 1</td>
-        <td>Fila 2 Columna 2</td>
-        <td>Fila 2 Columna 3</td>
-      </tr>
-      <tr>
-        <td>Fila 3 Columna 1</td>
-        <td>Fila 3 Columna 2</td>
-        <td>Fila 3 Columna 3</td>
-      </tr>
+        <caption style="color: blue; font-size: 25px">
+            Mi tabla de ejemplo
+        </caption>
+        <tr>
+            <th>Cabecera 1</th>
+            <th>Cabecera 2</th>
+            <th>Cabecera 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1 Columna 1</td>
+            <td>Fila 1 Columna 2</td>
+            <td>Fila 1 Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 2 Columna 1</td>
+            <td>Fila 2 Columna 2</td>
+            <td>Fila 2 Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila 3 Columna 1</td>
+            <td>Fila 3 Columna 2</td>
+            <td>Fila 3 Columna 3</td>
+        </tr>
     </table>
-</br>
+    </br>
     <table>
         <thead>
             <tr>
@@ -70,5 +86,36 @@
             </tr>
         </tbody>
     </table>
-  </body>
+    <h1>Inline</h1>
+
+    <a href="https://livinglab.io/es" target="_blank">ENLACE LIVINGLAB-CUU</a>
+    </br>
+    <img src="imagenes/Lindemann.png" alt="Lindemann" width="300">
+    </br>
+    <span style="color: green">Elementos en <div style="color: blue; border: 1px solid black">linea</div>html</span>
+    </br>
+    <sub>subíndice: </sub>H<sub>2</sub>0
+    </br>
+    <sup>superíndice: </sup>(a + b)<sup>2</sup>
+    </br>
+    <span style="color: blue; font-size: 30px;"><strong>Elementos </strong>en <i>linea </i><u>html</u></span>
+    <input />
+    </br>
+    <div id="myDiv">
+        <h2>Título del contenido</h2>
+        Este es el contenido del artículo
+    </br>
+        <img src="imagenes/GitHub.png" alt="">
+        <p>Más contenido del artículo</p>
+    </div>
+
+    <div class="mySecondDiv">
+        <h2>Título del 2do Div</h2>
+        Este es el contenido del artículo
+    </br>
+        <img src="imagenes/GitHub.png" alt="">
+        <p>Más contenido del artículo</p>
+    </div>
+</body>
+
 </html>
