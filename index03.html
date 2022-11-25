@@ -10,12 +10,72 @@
 
 <body>
     <h1>Formularios en HTML</h1>
-    <form>
+    <form method="get" action="mi_servidor" novalidate="true" autocomplete="off" target="_blank" />
+    <fieldset>
+        <legend>Datos</legend>
+        <label for="idEmpleado">Núm. Empleado: </label>
+        <input type="text" id="idEmpleado" name="idEmpleado" readonly="true" value="244645">
+        </br>
+        <input type="hidden" id="sistema" name="sistema" value="SAP">
+        </br>
         <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" />
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required="true" />
+        </br>
         <label for="apellido">Apellido: </label>
-        <input type="text" id="apellido" placeholder="Escribe tu apellido" name="apellido" />
+        <input type="text" id="apellido" placeholder="Escribe tu apellido" name="apellido" required="true" />
+        </br>
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" placeholder="Agrega una contraseña" name="password" required="true"
+            pattern="[A-Za-z0-9]{5,10}" title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 10" />
+        </br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Agrega una cuenta de correo electronico" name="email"
+            required="true" />
+        </br>
+        <label for="edad">Edad: </label>
+        <input type="number" id="edad" placeholder="Edad" name="edad" required="true" min="0" max="100" minlength="1"
+            maxlength="3" />
+        </br>
+        <label>Género: </label>
+        </br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        </br>
+        <input type="radio" id="masculino" name="genero" value="masculino" />
+        <label for="masculino">Masculino</label>
+        </br>
+        <label>Temas de interés</label>
+        </br>
+        <input type="checkbox" id="html" name="temas_interes" value="html" />
+        <label for="html">HTML</label>
+        </br>
+        <input type="checkbox" id="JavaScript" name="temas_interes" value="JavaScript" />
+        <label for="JavaScript">JavaScript</label>
+        </br>
+        <input type="checkbox" id="CSS" name="temas_interes" value="CSS" />
+        <label for="CSS">CSS</label>
+        </br>
+        <input type="checkbox" id="Bootstrap" name="temas_interes" value="Bootstrap" />
+        <label for="Bootstrap">Bootstrap</label>
+        </br>
+        <label>Nivel académico: </label>
+        </br>
+        <select id="nivel_academico" name="nivel_academico" multiple="true">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="bachilleres">Bachilleres</option>
+            <option value="licenciatura">Licenciatura</option>
+            <option value="posgrado">Posgrado</option>
+        </select>
+        </br>
+        <label for="comentario">Comentario: </label>
+        </br>
+        <textarea name="comentario" id="comentario" cols="30" rows="2">Este es mi comentario:</textarea>
+        </br>
         <input type="submit" value="Guardar" />
+        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar" />
+        <input type="reset" value="Restablecer" />
+    </fieldset>
     </form>
 </body>
 
